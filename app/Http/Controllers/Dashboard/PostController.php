@@ -25,7 +25,7 @@ class PostController extends Controller
      */
     public function create()
     {
-        //
+        echo view('dashboard.post.create');
     }
 
     /**
@@ -36,7 +36,7 @@ class PostController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        echo $request->input('slug');
     }
 
     /**
